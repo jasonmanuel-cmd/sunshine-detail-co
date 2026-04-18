@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunshine Detailing Co. | Mobile Auto Detailing Bakersfield 661</title>
+  <meta name="description" content="Precision automotive paint preservation for the 661. Mobile auto detailing in Bakersfield, CA—the Sunshine Shield, Sunshine Signature full detail, and on-site mobile service at your driveway." />
+  <meta name="theme-color" content="#050506" />
+  <meta property="og:title" content="Sunshine Detailing Co. | Bakersfield Mobile Detailing" />
+  <meta property="og:description" content="Sunshine Detailing Co.—desert-tested exterior protection and interior/exterior auto detailing. Mobile service across the 661." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* Logo palette: leather black, electric gold, brushed chrome */
+      --leather: #050506;
+      --charcoal: #0e0e12;
+      --panel: #14141a;
+      --panel-up: #1a1a22;
+      --chrome: #9aa3b2;
+      --chrome-bright: #e6eaf2;
+      --chrome-dim: #6b7384;
+      --muted: #8b93a4;
+      --gold: #d4a012;
+      --gold-mid: #e8b81e;
+      --gold-bright: #f5d54a;
+      --gold-electric: #f0c415;
+      --gold-deep: #8a6a0c;
+      --stroke: rgba(180, 190, 210, 0.1);
+      --stroke-gold: rgba(232, 184, 30, 0.35);
+      --stroke-chrome: rgba(200, 210, 225, 0.18);
+      --glow-gold: 0 0 28px rgba(232, 184, 30, 0.28), 0 0 56px rgba(232, 184, 30, 0.1);
+      --glow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      --radius: 14px;
+      --max: 1120px;
+      --hex-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='none' stroke='%23ffffff06' d='M14 0l12.1 7v14L14 28 1.9 21V7z'/%3E%3C/svg%3E");
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Outfit", system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--chrome-bright);
+      background: var(--leather);
+      min-height: 100vh;
+    }
+
+    /* Leather base + honeycomb (logo grille) + rim light */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 120% 65% at 50% -8%, rgba(232, 184, 30, 0.14), transparent 52%),
+        radial-gradient(ellipse 70% 45% at 95% 5%, rgba(160, 175, 200, 0.08), transparent 42%),
+        radial-gradient(ellipse 50% 35% at 5% 90%, rgba(232, 184, 30, 0.05), transparent 50%),
+        var(--hex-pattern);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 28px 49px;
+      z-index: 0;
+      opacity: 1;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    a { color: var(--gold-electric); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--chrome-bright); }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(180deg, var(--gold-bright), var(--gold-mid));
+      color: var(--leather);
+      z-index: 100;
+      border-radius: 8px;
+    }
+
+    /* Header */
+    header.site {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px) saturate(1.2);
+      background: linear-gradient(180deg, rgba(8, 8, 11, 0.92), rgba(5, 5, 6, 0.88));
+      border-bottom: 1px solid var(--stroke-chrome);
+      box-shadow: 0 1px 0 rgba(232, 184, 30, 0.12);
+    }
+    .site-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-logo {
+      display: block;
+      height: clamp(44px, 8vw, 52px);
+      width: auto;
+      object-fit: contain;
+    }
+    nav ul {
+      display: flex;
+      gap: 1.25rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    nav a:hover { color: var(--gold-bright); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .btn:focus-visible {
+      outline: 2px solid var(--gold-mid);
+      outline-offset: 3px;
+    }
+    .btn-primary {
+      background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 38%, var(--gold-deep) 100%);
+      color: var(--leather);
+      border: 1px solid rgba(255, 235, 180, 0.35);
+      box-shadow: var(--glow-gold), var(--glow-inset);
+    }
+    .btn-primary:hover { transform: translateY(-1px); filter: brightness(1.05); color: var(--leather); }
+    .btn-ghost {
+      background: rgba(20, 20, 26, 0.6);
+      border-color: var(--stroke-chrome);
+      color: var(--chrome-bright);
+    }
+    .btn-ghost:hover {
+      border-color: rgba(232, 184, 30, 0.45);
+      color: var(--gold-bright);
+      background: rgba(232, 184, 30, 0.06);
+    }
+
+    /* Hero */
+    .hero {
+      padding: clamp(3rem, 8vw, 5rem) 0 3rem;
+    }
+    .hero-grid {
+      display: grid;
+      gap: 2rem;
+      align-items: center;
+    }
+    @media (min-width: 880px) {
+      .hero-grid { grid-template-columns: 1.1fr 0.9fr; }
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-electric);
+      margin-bottom: 0.75rem;
+      text-shadow: 0 0 24px rgba(232, 184, 30, 0.35);
+    }
+    h1 {
+      font-family: Syne, sans-serif;
+      font-size: clamp(2rem, 5vw, 2.85rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      font-weight: 800;
+      color: var(--chrome-bright);
+      text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5), 0 0 48px rgba(232, 184, 30, 0.12);
+    }
+    .hero-lede {
+      font-size: 1.125rem;
+      color: var(--muted);
+      max-width: 36ch;
+      margin: 0 0 1.5rem;
+    }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .hero-card {
+      background:
+        linear-gradient(165deg, rgba(26, 26, 34, 0.95) 0%, rgba(14, 14, 18, 0.98) 100%);
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      box-shadow:
+        var(--glow-inset),
+        0 0 0 1px rgba(232, 184, 30, 0.08),
+        0 20px 48px rgba(0, 0, 0, 0.45);
+    }
+    .hero-logo {
+      display: block;
+      width: min(100%, 280px);
+      height: auto;
+      margin: 0 auto 1.25rem;
+      object-fit: contain;
+      filter:
+        drop-shadow(0 4px 20px rgba(0, 0, 0, 0.6))
+        drop-shadow(0 0 32px rgba(232, 184, 30, 0.15));
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(232, 184, 30, 0.12), transparent 68%);
+      pointer-events: none;
+    }
+    .hero-card h2 {
+      font-family: Syne, sans-serif;
+      font-size: 1.1rem;
+      margin: 0 0 0.5rem;
+    }
+    .hero-card p { margin: 0; font-size: 0.95rem; color: var(--muted); }
+    .stat-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .stat { min-width: 120px; }
+    .stat b { display: block; font-size: 1.5rem; font-family: Syne, sans-serif; color: var(--gold-bright); }
+    .stat span { font-size: 0.8rem; color: var(--muted); }
+
+    section { padding: 3rem 0; }
+    section:nth-of-type(even) {
+      background: linear-gradient(180deg, rgba(20, 20, 26, 0.35), rgba(8, 8, 11, 0.2));
+      border-block: 1px solid var(--stroke);
+    }
+    .section-head {
+      max-width: 640px;
+      margin-bottom: 2rem;
+    }
+    .section-head h2 {
+      font-family: Syne, sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin: 0 0 0.5rem;
+      color: var(--chrome-bright);
+      text-shadow: 0 0 40px rgba(232, 184, 30, 0.08);
+    }
+    .section-head p { margin: 0; color: var(--muted); }
+
+    /* Services */
+    .tiers {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .tiers { grid-template-columns: repeat(3, 1fr); }
+    }
+    .tier {
+      background: linear-gradient(180deg, var(--panel-up), var(--panel));
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-shadow: var(--glow-inset);
+    }
+    .tier.featured {
+      border-color: var(--stroke-gold);
+      box-shadow: var(--glow-gold), var(--glow-inset), 0 0 0 1px rgba(232, 184, 30, 0.1);
+    }
+    .tier h3 {
+      font-family: Syne, sans-serif;
+      font-size: 1.15rem;
+      margin: 0 0 0.5rem;
+      color: var(--gold-bright);
+    }
+    .tier p { margin: 0 0 1rem; flex: 1; font-size: 0.95rem; color: var(--muted); }
+    .tier ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: 0.88rem;
+      color: var(--chrome-bright);
+    }
+    .tier li { margin-bottom: 0.35rem; }
+
+    /* Table (extractable) */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--stroke-chrome);
+      box-shadow: var(--glow-inset);
+    }
+    table.services-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      background: var(--charcoal);
+    }
+    .services-table th,
+    .services-table td {
+      padding: 0.85rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--stroke);
+    }
+    .services-table th {
+      font-family: Syne, sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gold-electric);
+      background: linear-gradient(180deg, rgba(232, 184, 30, 0.1), rgba(232, 184, 30, 0.04));
+    }
+    .services-table tr:last-child td { border-bottom: none; }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (min-width: 800px) {
+      .about-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .about-card {
+      background: linear-gradient(180deg, var(--panel-up), var(--charcoal));
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--glow-inset);
+    }
+    .about-card h3 {
+      font-family: Syne, sans-serif;
+      margin-top: 0;
+      color: var(--chrome-bright);
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid var(--stroke-chrome);
+      color: var(--chrome);
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    /* FAQ */
+    .faq {
+      display: grid;
+      gap: 1rem;
+    }
+    details.faq-item {
+      background: var(--panel);
+      border: 1px solid var(--stroke-chrome);
+      border-radius: 12px;
+      padding: 0 1rem;
+    }
+    details.faq-item summary {
+      cursor: pointer;
+      font-weight: 700;
+      padding: 1rem 0;
+      list-style: none;
+      color: var(--chrome-bright);
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Lead form */
+    .lead {
+      display: grid;
+      gap: 2rem;
+    }
+    @media (min-width: 860px) {
+      .lead { grid-template-columns: 1fr 1.1fr; align-items: start; }
+    }
+    form.lead-form {
+      background: linear-gradient(180deg, var(--panel-up), var(--panel));
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--glow-inset);
+    }
+    .field {
+      margin-bottom: 1rem;
+    }
+    .field label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      border-radius: 10px;
+      border: 1px solid var(--stroke-chrome);
+      background: var(--charcoal);
+      color: var(--chrome-bright);
+      font: inherit;
+    }
+    .field textarea { min-height: 120px; resize: vertical; }
+    .field input:focus-visible,
+    .field select:focus-visible,
+    .field textarea:focus-visible {
+      outline: 2px solid var(--gold-mid);
+      outline-offset: 2px;
+    }
+    .honeypot {
+      position: absolute;
+      left: -5000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .form-foot {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 1rem;
+    }
+    .form-status {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 10px;
+      display: none;
+      font-size: 0.9rem;
+    }
+    .form-status.ok {
+      display: block;
+      background: rgba(232, 184, 30, 0.1);
+      border: 1px solid rgba(232, 184, 30, 0.35);
+      color: var(--gold-bright);
+    }
+    .form-status.err {
+      display: block;
+      background: rgba(255, 80, 80, 0.1);
+      border: 1px solid rgba(255, 80, 80, 0.35);
+      color: #ffb4b4;
+    }
+
+    /* Footer */
+    footer {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--stroke-chrome);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.35));
+    }
+    footer .coai {
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--chrome-dim);
+    }
+
+    /* Pricing menu */
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      justify-content: center;
+      align-items: center;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(232, 184, 30, 0.08), rgba(160, 175, 200, 0.04));
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    .contact-strip a { color: var(--gold-electric); }
+    .pricing-packages {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 720px) {
+      .pricing-packages { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1000px) {
+      .pricing-packages { grid-template-columns: repeat(4, 1fr); }
+    }
+    .price-card {
+      background: linear-gradient(165deg, var(--panel-up), var(--panel));
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-shadow: var(--glow-inset);
+    }
+    .price-card.featured {
+      border-color: var(--stroke-gold);
+      box-shadow: var(--glow-gold), var(--glow-inset);
+    }
+    .price-card h3 {
+      font-family: Syne, sans-serif;
+      font-size: 1.05rem;
+      margin: 0 0 0.25rem;
+      color: var(--gold-bright);
+    }
+    .price-card .price {
+      font-family: Syne, sans-serif;
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin: 0 0 1rem;
+      color: var(--chrome-bright);
+      text-shadow: 0 0 20px rgba(232, 184, 30, 0.2);
+    }
+    .price-card ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+      flex: 1;
+    }
+    .price-card li { margin-bottom: 0.35rem; }
+    .pricing-subgrid {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 900px) {
+      .pricing-subgrid { grid-template-columns: 1fr 1fr; align-items: start; }
+    }
+    .pricing-panel {
+      background: linear-gradient(180deg, var(--charcoal), var(--panel));
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--glow-inset);
+    }
+    .pricing-panel h3 {
+      font-family: Syne, sans-serif;
+      font-size: 1rem;
+      margin: 0 0 1rem;
+      color: var(--gold-electric);
+    }
+    .addon-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.88rem;
+    }
+    .addon-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--stroke);
+      color: var(--muted);
+    }
+    .addon-list li:last-child { border-bottom: none; }
+    .addon-list .amt { color: var(--gold-bright); font-weight: 700; white-space: nowrap; }
+    .ceramic-grid {
+      display: grid;
+      gap: 0.5rem;
+    }
+    @media (min-width: 480px) {
+      .ceramic-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .ceramic-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0.75rem;
+      background: var(--panel-up);
+      border-radius: 8px;
+      font-size: 0.88rem;
+      border: 1px solid var(--stroke-chrome);
+    }
+    .ceramic-row span:last-child { color: var(--gold-bright); font-weight: 700; }
+    .price-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 1.5rem;
+    }
+
+    ::selection {
+      background: rgba(232, 184, 30, 0.35);
+      color: var(--leather);
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <div class="wrap site-inner">
+      <a class="brand" href="#top" id="top">
+        <img class="brand-logo" src="assets/logo.png" width="200" height="60" alt="Sunshine Detailing Co." />
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">Owner</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary" href="#book">Book Your Shine</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">661 · Oildale · Mobile detailing</span>
+          <h1 id="hero-title">Precision automotive paint preservation for the 661.</h1>
+          <p class="hero-lede">Mobile auto detailing with pro-shop standards at your driveway—built for Bakersfield heat, dust, and sun load, not generic “wash and go.”</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#book">Get a Quote</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/angelgabrielsoto661/" rel="noopener noreferrer" target="_blank">See recent work</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img class="hero-logo" src="assets/logo.png" alt="" width="560" height="280" decoding="async" />
+          <p style="margin: 0 0 1.25rem; font-size: 0.95rem; color: var(--muted);">The Sunshine Shield, Sunshine Signature, and Mobile Detailing—automotive exterior and interior work with mobile-first booking. Pick your tier, vehicle, and window.</p>
+          <div class="stat-row">
+            <div class="stat">
+              <b>661</b>
+              <span>Local-first routing</span>
+            </div>
+            <div class="stat">
+              <b>3</b>
+              <span>Detailing tiers</span>
+            </div>
+            <div class="stat">
+              <b>On-site</b>
+              <span>We come to you</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="services-title">Sunshine Detailing Co. tiers</h2>
+          <p>Named packages under Sunshine Detailing Co. signal intent: you are not buying a rushed rinse—you are buying process, paint and interior care, and pride of finish on your vehicle.</p>
+        </div>
+
+        <div class="tiers">
+          <article class="tier">
+            <h3>The Sunshine Shield</h3>
+            <p>Specialized automotive exterior protection engineered for intense Central Valley UV and airborne grit. Preserve gloss and reduce long-term fatigue on your vehicle’s clear coat and paint.</p>
+            <ul>
+              <li>Exterior-focused auto detailing and protection workflow</li>
+              <li>Sun-forward chemistry and methods for the 661 climate</li>
+              <li>Automotive paint preservation as the primary outcome</li>
+            </ul>
+          </article>
+          <article class="tier featured">
+            <h3>Sunshine Signature</h3>
+            <p>Comprehensive interior and exterior auto detailing for drivers who want precision across the whole vehicle—cabin, glass, wheels, and automotive paint in one cohesive standard.</p>
+            <ul>
+              <li>Full interior + exterior execution</li>
+              <li>High-value automotive care positioning</li>
+              <li>Detail-forward finishing, not “quick wash” energy</li>
+            </ul>
+          </article>
+          <article class="tier">
+            <h3>Mobile Detailing</h3>
+            <p>We come to your driveway, fleet yard, or workplace—mobile auto detailing so the job fits your day. Mobile-first booking matches how you schedule on the go.</p>
+            <ul>
+              <li>On-location service across Bakersfield</li>
+              <li>Fast, readable intake on phone screens</li>
+              <li>Scheduling that respects your time</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="eyebrow" style="margin: 2rem 0 1rem;">Service snapshot (for search &amp; assistants)</h3>
+        <div class="table-wrap">
+          <table class="services-table">
+            <thead>
+              <tr>
+                <th scope="col">Offering</th>
+                <th scope="col">Focus</th>
+                <th scope="col">Best for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Sunshine Shield</td>
+                <td>Automotive exterior protection vs. sun and contamination</td>
+                <td>Daily drivers exposed to heat and highway dust</td>
+              </tr>
+              <tr>
+                <td>Sunshine Signature</td>
+                <td>Full interior + exterior auto detailing</td>
+                <td>Owners who want a single high-standard reset</td>
+              </tr>
+              <tr>
+                <td>Mobile Detailing</td>
+                <td>On-site convenience across the 661</td>
+                <td>Busy schedules, fleets, and driveway service</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="pricing-title">Menu &amp; pricing</h2>
+          <p>Official menu pricing for Sunshine Detailing Co.—packages, add-ons, and ceramic coating terms.</p>
+        </div>
+
+        <div class="contact-strip">
+          <span>Oildale, CA</span>
+          <span aria-hidden="true">·</span>
+          <a href="tel:+16615550199">(661) 555-0199</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://sunshinedetail661.com/" rel="noopener noreferrer">sunshinedetail661.com</a>
+        </div>
+
+        <div class="pricing-packages">
+          <article class="price-card">
+            <h3>Regular package</h3>
+            <p class="price">$80</p>
+            <ul>
+              <li>Headlight restoration</li>
+              <li>Interior protectant</li>
+              <li>Bug &amp; tar removal</li>
+              <li>Paint &amp; protective coat</li>
+              <li>Door jams</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Bronze package</h3>
+            <p class="price">$100</p>
+            <ul>
+              <li>Headlight restoration</li>
+              <li>Interior protectant</li>
+              <li>Bug &amp; tar removal</li>
+              <li>Paint &amp; protective coat</li>
+              <li>Door jams</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Gold package</h3>
+            <p class="price">$100</p>
+            <ul>
+              <li>Ceramic soap</li>
+              <li>Buff &amp; polish</li>
+              <li>Wash &amp; wax</li>
+              <li>Seat &amp; carpet shampoo</li>
+              <li>Door jams</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <h3>Gold premium package</h3>
+            <p class="price">$140</p>
+            <ul>
+              <li>Ceramic soap</li>
+              <li>Buff &amp; polish</li>
+              <li>Wash &amp; wax</li>
+              <li>Seat &amp; carpet shampoo</li>
+              <li>Door jams</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="pricing-subgrid">
+          <div class="pricing-panel">
+            <h3>Add-on items ($10–$40 each)</h3>
+            <ul class="addon-list">
+              <li><span>Engine bay detailing</span> <span class="amt">$30</span></li>
+              <li><span>Clay bar treatment</span> <span class="amt">$40</span></li>
+              <li><span>Hubcap &amp; rim wash</span> <span class="amt">$30</span></li>
+              <li><span>Leather seat conditioning</span> <span class="amt">$40</span></li>
+              <li><span>Sticker removal</span> <span class="amt">$20</span></li>
+              <li><span>Odor elimination</span> <span class="amt">$30</span></li>
+              <li><span>Pet hair removal</span> <span class="amt">$30</span></li>
+              <li><span>Stubborn stains</span> <span class="amt">$30</span></li>
+              <li><span>Engine bay dressing</span> <span class="amt">$20</span></li>
+              <li><span>Water spot removal</span> <span class="amt">$30</span></li>
+              <li><span>Full vehicle buff &amp; polish</span> <span class="amt">$40</span></li>
+              <li><span>Exhaust polish &amp; clean</span> <span class="amt">$10</span></li>
+            </ul>
+          </div>
+          <div class="pricing-panel">
+            <h3>Ceramic coating packages</h3>
+            <div class="ceramic-grid">
+              <div class="ceramic-row"><span>1 year coating</span><span>$60</span></div>
+              <div class="ceramic-row"><span>2 year coating</span><span>$120</span></div>
+              <div class="ceramic-row"><span>3 year coating</span><span>$180</span></div>
+              <div class="ceramic-row"><span>4 year coating</span><span>$240</span></div>
+              <div class="ceramic-row"><span>5 year coating</span><span>$300</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="price-note">Prices reflect the published menu; final quote may vary by vehicle size and condition. Ask about bundling add-ons with your package.</p>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="about-title">Detailing-first credibility</h2>
+          <p>Trust is not claimed—it is demonstrated through consistent auto detailing: clear processes, correct products for automotive surfaces, and finishes you can inspect in daylight.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Maverick Calloway</h3>
+            <p><strong>Owner, Sunshine Detailing Co.</strong> Maverick focuses exclusively on vehicles—automotive paint, glass, wheels, and interiors—with the same discipline you would expect from a serious detailing operation: sequenced steps, the right tools and chemistry for cars, and zero tolerance for “good enough” when your vehicle is the proof.</p>
+            <div class="tags">
+              <span class="tag">661 mobile detailing</span>
+              <span class="tag">Paint &amp; interior focus</span>
+              <span class="tag">Detailing-first QC</span>
+            </div>
+          </div>
+          <div class="about-card">
+            <h3>Portfolio &amp; proof</h3>
+            <p>Follow live work and seasonal transformations on Instagram—real vehicles, real lighting conditions, real Bakersfield context.</p>
+            <p>
+              <a class="btn btn-primary" href="https://www.instagram.com/angelgabrielsoto661/" rel="noopener noreferrer" target="_blank">@angelgabrielsoto661</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="faq-title">Questions locals actually ask</h2>
+          <p>Structured for answer engines and voice search—clear entities: place, detailing service, business.</p>
+        </div>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Who is the best mobile detailer in Bakersfield?</summary>
+            <p>Choose a mobile detailing provider with named packages, clear outcomes, and proof of work on real cars in your climate. Sunshine Detailing Co. lists tiered auto detailing (The Sunshine Shield, Sunshine Signature, Mobile Detailing) and shows finished vehicles on Instagram for verification.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer mobile detailing in the 661 area?</summary>
+            <p>Yes. Mobile detailing is a core pillar—booking is designed for phones first, and service is positioned for driveway and on-site work across Bakersfield and the surrounding 661 region.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What makes exterior protection different in Bakersfield?</summary>
+            <p>Heat and particulate load are not theoretical here. The Sunshine Shield package is exterior auto detailing and protection against intense sun exposure and environmental wear on your vehicle’s paint—preservation-first, not cosmetic-only.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I book Sunshine Detailing Co.?</summary>
+            <p>Use the lead form on this page: include vehicle type, requested detailing tier, and the best contact window. The intake is structured so responses are actionable—vehicle, detailing service, timeline—without back-and-forth noise.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" aria-labelledby="book-title">
+      <div class="wrap lead">
+        <div>
+          <div class="section-head">
+            <h2 id="book-title">Book Sunshine Detailing Co.</h2>
+            <p>Streamlined intake for Sunshine Detailing Co. jobs: vehicle, tier, and contact channel—structured fields that downstream systems (CRM, SMS, or automation) can parse reliably.</p>
+          </div>
+          <p style="color: var(--muted); font-size: 0.95rem;">Prefer social? Message or DM via <a href="https://www.instagram.com/angelgabrielsoto661/">Instagram</a>. Prefer the form? Every field maps to your vehicle and detailing request so we can quote and schedule.</p>
+        </div>
+
+        <!-- Netlify Forms: add data-netlify="true" netlify-honeypot="bot-field" action="/" plus <input type="hidden" name="form-name" value="sunshine-lead" /> -->
+        <form
+          class="lead-form"
+          name="sunshine-lead"
+          method="POST"
+          action="#"
+        >
+          <p class="honeypot">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+          </div>
+          <div class="field">
+            <label for="vehicle">Vehicle type</label>
+            <select id="vehicle" name="vehicle_type" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="sedan_coupe">Sedan / coupe</option>
+              <option value="suv_crossover">SUV / crossover</option>
+              <option value="truck">Truck</option>
+              <option value="van">Van</option>
+              <option value="ev">EV</option>
+              <option value="other_fleet">Other / fleet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tier">Requested service</label>
+            <select id="tier" name="service_tier" required>
+              <option value="" disabled selected>Select package or service</option>
+              <optgroup label="Service pillars">
+                <option value="sunshine_shield">The Sunshine Shield (exterior protection)</option>
+                <option value="sunshine_signature">Sunshine Signature (full interior + exterior)</option>
+                <option value="mobile_detail">Mobile detailing (on-site)</option>
+              </optgroup>
+              <optgroup label="Menu packages">
+                <option value="pkg_regular">Regular package ($80)</option>
+                <option value="pkg_bronze">Bronze package ($100)</option>
+                <option value="pkg_gold_100">Gold package ($100)</option>
+                <option value="pkg_gold_premium">Gold premium package ($140)</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="addon">Add-on item(s)</option>
+                <option value="ceramic">Ceramic coating</option>
+                <option value="unsure">Not sure — recommend for me</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">Notes (location, timing, condition)</label>
+            <textarea id="msg" name="message" placeholder="Neighborhood, preferred days, paint/ceramic questions, fleet size…"></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit request</button>
+          <p class="form-foot">By submitting, you agree to be contacted about detailing services. This form is wired for Netlify Forms when deployed on Netlify; for other hosts, point <code>action</code> to your endpoint or form backend.</p>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Sunshine Detailing Co. · Mobile auto detailing · Oildale, CA · <a href="tel:+16615550199">(661) 555-0199</a> · <a href="https://sunshinedetail661.com/">sunshinedetail661.com</a></p>
+      <p class="coai">Powered by Chaotically Organized AI</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "#local-business",
+        "name": "Sunshine Detailing Co.",
+        "description": "Mobile auto detailing and exterior automotive paint preservation for Bakersfield and the 661 area code.",
+        "url": "https://sunshinedetail661.com/",
+        "telephone": "+1-661-555-0199",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Bakersfield, CA"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oildale",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Maverick Calloway",
+          "knowsAbout": ["Auto detailing", "Mobile auto detailing", "Automotive exterior detailing", "Interior auto detailing", "Automotive paint care"]
+        },
+        "sameAs": [
+          "https://www.instagram.com/angelgabrielsoto661/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Sunshine Detailing Co. service tiers",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "The Sunshine Shield",
+                "description": "Automotive exterior protection and detailing for vehicle paint against intense sun and environmental wear in Bakersfield."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sunshine Signature",
+                "description": "Comprehensive interior and exterior auto detailing for high-value automotive care."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Mobile Detailing",
+                "description": "On-location mobile auto detailing across the 661."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-schema",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is the best mobile detailer in Bakersfield?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choose a mobile detailing provider with named packages, clear outcomes, and proof of work on vehicles in your climate. Sunshine Detailing Co. offers The Sunshine Shield, Sunshine Signature, and Mobile Detailing, with finished cars shown on Instagram."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer mobile detailing in the 661 area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Mobile detailing is core—booking is mobile-first and service is positioned for on-site work across Bakersfield and the 661 region."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (function () {
+      var form = document.querySelector("form.lead-form");
+      var statusEl = document.getElementById("form-status");
+      if (!form || !statusEl) return;
+
+      form.addEventListener("submit", function (e) {
+        if (form.getAttribute("data-netlify") === "true") return;
+        e.preventDefault();
+        statusEl.className = "form-status ok";
+        statusEl.textContent =
+          "Request captured in preview mode. For production: deploy with Netlify Forms (data-netlify=\"true\", action=\"/\") or POST to your own endpoint / automation.";
+      });
+    })();
+  </script>
+</body>
+</html>

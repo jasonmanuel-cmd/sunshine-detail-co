@@ -3,13 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sunshine Detailing Co. | Mobile Auto Detailing Bakersfield 661</title>
-  <meta name="description" content="Precision automotive paint preservation for the 661. Mobile auto detailing in Bakersfield, CA—the Sunshine Shield, Sunshine Signature full detail, and on-site mobile service at your driveway." />
+  <title>Mobile Car Detailing Bakersfield &amp; 661 | Sunshine Detailing Co.</title>
+  <meta name="description" content="Mobile car detailing in Bakersfield and the 661—driveway service in Oildale, menu pricing from $80, exterior protection, interiors, ceramic add-ons. Book by phone or form." />
   <meta name="theme-color" content="#050506" />
-  <meta property="og:title" content="Sunshine Detailing Co. | Bakersfield Mobile Detailing" />
-  <meta property="og:description" content="Sunshine Detailing Co.—desert-tested exterior protection and interior/exterior auto detailing. Mobile service across the 661." />
+  <link rel="canonical" href="https://sunshinedetail661.com/" />
+  <meta property="og:title" content="Mobile Car Detailing Bakersfield &amp; 661 | Sunshine Detailing Co." />
+  <meta property="og:description" content="Driveway mobile detailing for the 661. Published menu ($80–$140+), Sunshine Shield &amp; Signature tiers, ceramic options. Oildale · Bakersfield area." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sunshinedetail661.com/" />
   <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://sunshinedetail661.com/assets/logo.png" />
+  <meta property="og:image:alt" content="Sunshine Detailing Co. shield logo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mobile Car Detailing Bakersfield &amp; 661 | Sunshine Detailing Co." />
+  <meta name="twitter:description" content="Driveway mobile detailing in the 661. Menu pricing, ceramic add-ons, book online." />
+  <meta name="twitter:image" content="https://sunshinedetail661.com/assets/logo.png" />
+  <link rel="icon" href="/assets/logo.png" type="image/png" />
+  <link rel="preload" href="/assets/logo.png" as="image" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -630,6 +640,88 @@
       margin-top: 1.5rem;
     }
 
+    /* Entity strip (NAP + service area) */
+    .entity-strip {
+      padding: 1.25rem 0;
+      border-block: 1px solid var(--stroke-chrome);
+      background: linear-gradient(180deg, rgba(232, 184, 30, 0.04), rgba(8, 8, 11, 0.5));
+    }
+    .entity-strip .wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    @media (min-width: 768px) {
+      .entity-strip .wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+    }
+    .entity-block h2 {
+      font-family: Syne, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-electric);
+      margin: 0 0 0.35rem;
+    }
+    .entity-block p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--chrome-bright);
+      max-width: 52ch;
+    }
+    .entity-block strong { color: var(--chrome-bright); }
+    .entity-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+    .entity-contact a { font-weight: 600; }
+    .entity-jump {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .entity-jump a { margin-left: 0.35rem; }
+
+    /* Trust / proof */
+    .trust-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .trust-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .trust-card {
+      background: linear-gradient(180deg, var(--panel-up), var(--panel));
+      border: 1px solid var(--stroke-chrome);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--glow-inset);
+    }
+    .trust-card h3 {
+      font-family: Syne, sans-serif;
+      font-size: 0.95rem;
+      margin: 0 0 0.5rem;
+      color: var(--gold-bright);
+    }
+    .trust-card p,
+    .trust-card li {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .trust-card ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.1rem;
+    }
+
     ::selection {
       background: rgba(232, 184, 30, 0.35);
       color: var(--leather);
@@ -648,7 +740,9 @@
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#entity">Area</a></li>
           <li><a href="#about">Owner</a></li>
+          <li><a href="#trust">Trust</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#book">Book</a></li>
         </ul>
@@ -662,15 +756,15 @@
       <div class="wrap hero-grid">
         <div>
           <span class="eyebrow">661 · Oildale · Mobile detailing</span>
-          <h1 id="hero-title">Precision automotive paint preservation for the 661.</h1>
-          <p class="hero-lede">Mobile auto detailing with pro-shop standards at your driveway—built for Bakersfield heat, dust, and sun load, not generic “wash and go.”</p>
+          <h1 id="hero-title">Mobile car detailing in Bakersfield &amp; the 661</h1>
+          <p class="hero-lede">Precision paint preservation and full interior/exterior work at your driveway—built for Central Valley heat, dust, and sun load, not a generic wash-and-go.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="#book">Get a Quote</a>
             <a class="btn btn-ghost" href="https://www.instagram.com/angelgabrielsoto661/" rel="noopener noreferrer" target="_blank">See recent work</a>
           </div>
         </div>
         <div class="hero-card">
-          <img class="hero-logo" src="assets/logo.png" alt="" width="560" height="280" decoding="async" />
+          <img class="hero-logo" src="assets/logo.png" alt="" width="560" height="280" decoding="async" fetchpriority="high" />
           <p style="margin: 0 0 1.25rem; font-size: 0.95rem; color: var(--muted);">The Sunshine Shield, Sunshine Signature, and Mobile Detailing—automotive exterior and interior work with mobile-first booking. Pick your tier, vehicle, and window.</p>
           <div class="stat-row">
             <div class="stat">
@@ -690,11 +784,28 @@
       </div>
     </section>
 
+    <section id="entity" class="entity-strip" aria-labelledby="entity-title">
+      <div class="wrap">
+        <div class="entity-block">
+          <h2 id="entity-title">Who · what · where</h2>
+          <p>
+            <strong>Sunshine Detailing Co.</strong> is a <strong>mobile auto detailing</strong> business serving <strong>Bakersfield, Oildale, and the 661</strong> by appointment. We bring equipment to your driveway or lot—exterior protection, full interior/exterior details, and add-ons from our published <a href="#pricing">menu</a>.
+          </p>
+        </div>
+        <div class="entity-contact">
+          <span><strong>NAP:</strong> Oildale, CA</span>
+          <a href="tel:+16615550199">(661) 555-0199</a>
+          <a href="https://sunshinedetail661.com/">sunshinedetail661.com</a>
+        </div>
+        <p class="entity-jump">Quick links: <a href="#pricing">Menu &amp; pricing</a> · <a href="#faq">FAQ</a> · <a href="#book">Book</a></p>
+      </div>
+    </section>
+
     <section id="services" aria-labelledby="services-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="services-title">Sunshine Detailing Co. tiers</h2>
-          <p>Named packages under Sunshine Detailing Co. signal intent: you are not buying a rushed rinse—you are buying process, paint and interior care, and pride of finish on your vehicle.</p>
+          <h2 id="services-title">Detailing service tiers</h2>
+          <p>Named packages mean you know what you are buying: process, automotive paint and interior care, and a finish you can inspect—not a rushed rinse.</p>
         </div>
 
         <div class="tiers">
@@ -763,7 +874,7 @@
       <div class="wrap">
         <div class="section-head">
           <h2 id="pricing-title">Menu &amp; pricing</h2>
-          <p>Official menu pricing for Sunshine Detailing Co.—packages, add-ons, and ceramic coating terms.</p>
+          <p>Published menu: packages from <strong>$80</strong>, gold premium <strong>$140</strong>, add-ons, and ceramic terms—see below.</p>
         </div>
 
         <div class="contact-strip">
@@ -863,7 +974,7 @@
         <div class="about-grid">
           <div class="about-card">
             <h3>Maverick Calloway</h3>
-            <p><strong>Owner, Sunshine Detailing Co.</strong> Maverick focuses exclusively on vehicles—automotive paint, glass, wheels, and interiors—with the same discipline you would expect from a serious detailing operation: sequenced steps, the right tools and chemistry for cars, and zero tolerance for “good enough” when your vehicle is the proof.</p>
+            <p><strong>Owner.</strong> Maverick focuses on vehicles only—paint, glass, wheels, and interiors—with sequenced steps, correct chemistry, and zero tolerance for “good enough” when your car is the proof.</p>
             <div class="tags">
               <span class="tag">661 mobile detailing</span>
               <span class="tag">Paint &amp; interior focus</span>
@@ -871,11 +982,39 @@
             </div>
           </div>
           <div class="about-card">
-            <h3>Portfolio &amp; proof</h3>
-            <p>Follow live work and seasonal transformations on Instagram—real vehicles, real lighting conditions, real Bakersfield context.</p>
+            <h3>See the work</h3>
+            <p>Portfolio, reviews guidance, and how we operate live in the <a href="#trust">trust &amp; proof</a> section—same Instagram handle everywhere for entity consistency.</p>
             <p>
-              <a class="btn btn-primary" href="https://www.instagram.com/angelgabrielsoto661/" rel="noopener noreferrer" target="_blank">@angelgabrielsoto661</a>
+              <a class="btn btn-primary" href="#trust">Trust &amp; proof</a>
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust" aria-labelledby="trust-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="trust-title">Trust, proof &amp; reviews</h2>
+          <p>Transparency beats hype—here is how to verify the work before you book.</p>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <h3>Portfolio</h3>
+            <p>See recent vehicles, foam shots, and finishes in real Bakersfield light on Instagram—same handle we link everywhere for consistency.</p>
+            <p style="margin-top: 0.75rem;"><a class="btn btn-primary" href="https://www.instagram.com/angelgabrielsoto661/" rel="noopener noreferrer" target="_blank">@angelgabrielsoto661</a></p>
+          </div>
+          <div class="trust-card">
+            <h3>Reviews</h3>
+            <p>When live on Google Business Profile, search the business name plus “Oildale” or “661” and read current Google reviews. We do not paste fake ratings on this page.</p>
+          </div>
+          <div class="trust-card">
+            <h3>How we operate</h3>
+            <ul>
+              <li>By appointment (phone, form, or DM)</li>
+              <li>Mobile service—your location</li>
+              <li>Menu pricing published on this site</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -884,25 +1023,41 @@
     <section id="faq" aria-labelledby="faq-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="faq-title">Questions locals actually ask</h2>
-          <p>Structured for answer engines and voice search—clear entities: place, detailing service, business.</p>
+          <h2 id="faq-title">FAQ</h2>
+          <p>Short answers first—optimized for voice search and AI overviews. For prices, see the <a href="#pricing">menu</a>.</p>
         </div>
         <div class="faq">
           <details class="faq-item">
-            <summary>Who is the best mobile detailer in Bakersfield?</summary>
-            <p>Choose a mobile detailing provider with named packages, clear outcomes, and proof of work on real cars in your climate. Sunshine Detailing Co. lists tiered auto detailing (The Sunshine Shield, Sunshine Signature, Mobile Detailing) and shows finished vehicles on Instagram for verification.</p>
+            <summary>How much does mobile car detailing cost in Bakersfield?</summary>
+            <p>Published menu packages start at <strong>$80</strong> (Regular) and run through <strong>$140</strong> (Gold Premium). Add-ons run <strong>$10–$40</strong> each; ceramic coatings are priced by term on our <a href="#pricing">pricing section</a>. Final quotes can vary by vehicle size and condition.</p>
           </details>
           <details class="faq-item">
-            <summary>Do you offer mobile detailing in the 661 area?</summary>
-            <p>Yes. Mobile detailing is a core pillar—booking is designed for phones first, and service is positioned for driveway and on-site work across Bakersfield and the surrounding 661 region.</p>
+            <summary>Do you come to my driveway or workplace?</summary>
+            <p>Yes. We are a <strong>mobile detailing</strong> service—we work at your home, workplace, or fleet lot in the <strong>Bakersfield / 661</strong> area by appointment.</p>
           </details>
           <details class="faq-item">
-            <summary>What makes exterior protection different in Bakersfield?</summary>
-            <p>Heat and particulate load are not theoretical here. The Sunshine Shield package is exterior auto detailing and protection against intense sun exposure and environmental wear on your vehicle’s paint—preservation-first, not cosmetic-only.</p>
+            <summary>What areas around Bakersfield do you serve?</summary>
+            <p>We serve <strong>Oildale</strong>, <strong>Bakersfield</strong>, and the broader <strong>661</strong> region. Tell us your neighborhood in the <a href="#book">booking form</a> so we can confirm routing.</p>
           </details>
           <details class="faq-item">
-            <summary>How do I book Sunshine Detailing Co.?</summary>
-            <p>Use the lead form on this page: include vehicle type, requested detailing tier, and the best contact window. The intake is structured so responses are actionable—vehicle, detailing service, timeline—without back-and-forth noise.</p>
+            <summary>How long does a car detailing appointment take?</summary>
+            <p>Time depends on the package and vehicle size. We give you a realistic window when you book—plan for a multi-hour visit for full interior and exterior work.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I book or get a quote?</summary>
+            <p>Call <a href="tel:+16615550199">(661) 555-0199</a>, submit the <a href="#book">contact form</a> on this site, or DM <a href="https://www.instagram.com/angelgabrielsoto661/">Instagram</a>. Include vehicle type and the package or add-ons you want.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I choose a mobile detailer I can trust?</summary>
+            <p>Look for <strong>named packages</strong>, <strong>published pricing</strong>, recent <strong>photo proof</strong> in your climate, and consistent <strong>contact info</strong> across the web. We list services and prices here and show work on Instagram.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What makes exterior paint protection different in the Central Valley?</summary>
+            <p>Heat, dust, and sun load are constant here. Our <strong>Sunshine Shield</strong> tier focuses on <strong>automotive exterior protection</strong> and preservation—not just a quick wash.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer ceramic coating?</summary>
+            <p>Yes. Ceramic coating packages are listed by <strong>1–5 year</strong> terms on the <a href="#pricing">pricing menu</a>, alongside other add-ons.</p>
           </details>
         </div>
       </div>
@@ -912,10 +1067,10 @@
       <div class="wrap lead">
         <div>
           <div class="section-head">
-            <h2 id="book-title">Book Sunshine Detailing Co.</h2>
-            <p>Streamlined intake for Sunshine Detailing Co. jobs: vehicle, tier, and contact channel—structured fields that downstream systems (CRM, SMS, or automation) can parse reliably.</p>
+            <h2 id="book-title">Book or request a quote</h2>
+            <p>Tell us your vehicle, package or add-ons, and the best way to reach you—structured fields for faster scheduling.</p>
           </div>
-          <p style="color: var(--muted); font-size: 0.95rem;">Prefer social? Message or DM via <a href="https://www.instagram.com/angelgabrielsoto661/">Instagram</a>. Prefer the form? Every field maps to your vehicle and detailing request so we can quote and schedule.</p>
+          <p style="color: var(--muted); font-size: 0.95rem;">Call <a href="tel:+16615550199">(661) 555-0199</a>, use the form, or DM <a href="https://www.instagram.com/angelgabrielsoto661/">Instagram</a>.</p>
         </div>
 
         <!-- Netlify Forms: add data-netlify="true" netlify-honeypot="bot-field" action="/" plus <input type="hidden" name="form-name" value="sunshine-lead" /> -->
@@ -981,7 +1136,7 @@
           </div>
 
           <button class="btn btn-primary" type="submit">Submit request</button>
-          <p class="form-foot">By submitting, you agree to be contacted about detailing services. This form is wired for Netlify Forms when deployed on Netlify; for other hosts, point <code>action</code> to your endpoint or form backend.</p>
+          <p class="form-foot">By submitting, you agree to be contacted about detailing services. On Vercel or Netlify, connect <code>action</code> to your serverless endpoint or form provider.</p>
           <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
         </form>
       </div>
@@ -1000,40 +1155,66 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
-        "@id": "#local-business",
-        "name": "Sunshine Detailing Co.",
-        "description": "Mobile auto detailing and exterior automotive paint preservation for Bakersfield and the 661 area code.",
+        "@type": "WebSite",
+        "@id": "https://sunshinedetail661.com/#website",
         "url": "https://sunshinedetail661.com/",
-        "telephone": "+1-661-555-0199",
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "Bakersfield, CA"
-        },
+        "name": "Sunshine Detailing Co.",
+        "description": "Mobile car detailing in Bakersfield and the 661—driveway service, menu pricing, exterior protection and interior detailing.",
+        "publisher": { "@id": "https://sunshinedetail661.com/#local-business" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": ["LocalBusiness", "AutomotiveBusiness"],
+        "@id": "https://sunshinedetail661.com/#local-business",
+        "name": "Sunshine Detailing Co.",
+        "description": "Mobile auto detailing for Bakersfield, Oildale, and the 661 area code. Driveway and on-site service by appointment.",
+        "url": "https://sunshinedetail661.com/",
+        "telephone": "+16615550199",
+        "image": ["https://sunshinedetail661.com/assets/logo.png"],
+        "priceRange": "$80 - $300+",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Oildale",
           "addressRegion": "CA",
           "addressCountry": "US"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.2134,
+          "longitude": -119.0173
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Bakersfield, California" },
+          { "@type": "AdministrativeArea", "name": "Oildale, California" },
+          { "@type": "AdministrativeArea", "name": "Kern County, California" }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+16615550199",
+          "contactType": "customer service",
+          "areaServed": "US",
+          "availableLanguage": ["English"]
+        },
         "founder": {
           "@type": "Person",
           "name": "Maverick Calloway",
+          "jobTitle": "Owner",
           "knowsAbout": ["Auto detailing", "Mobile auto detailing", "Automotive exterior detailing", "Interior auto detailing", "Automotive paint care"]
         },
         "sameAs": [
+          "https://sunshinedetail661.com/",
           "https://www.instagram.com/angelgabrielsoto661/"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Sunshine Detailing Co. service tiers",
+          "name": "Detailing services and menu",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
                 "name": "The Sunshine Shield",
-                "description": "Automotive exterior protection and detailing for vehicle paint against intense sun and environmental wear in Bakersfield."
+                "description": "Automotive exterior protection and detailing for vehicle paint in Central Valley conditions."
               }
             },
             {
@@ -1041,15 +1222,15 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Sunshine Signature",
-                "description": "Comprehensive interior and exterior auto detailing for high-value automotive care."
+                "description": "Full interior and exterior auto detailing."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Mobile Detailing",
-                "description": "On-location mobile auto detailing across the 661."
+                "name": "Mobile detailing",
+                "description": "On-location mobile auto detailing in the 661 region."
               }
             }
           ]
@@ -1057,22 +1238,70 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "#faq-schema",
+        "@id": "https://sunshinedetail661.com/#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Who is the best mobile detailer in Bakersfield?",
+            "name": "How much does mobile car detailing cost in Bakersfield?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Choose a mobile detailing provider with named packages, clear outcomes, and proof of work on vehicles in your climate. Sunshine Detailing Co. offers The Sunshine Shield, Sunshine Signature, and Mobile Detailing, with finished cars shown on Instagram."
+              "text": "Published menu packages start at $80 (Regular) and run through $140 (Gold Premium). Add-ons run $10–$40 each; ceramic coatings are priced by term on the pricing section. Final quotes can vary by vehicle size and condition."
             }
           },
           {
             "@type": "Question",
-            "name": "Do you offer mobile detailing in the 661 area?",
+            "name": "Do you come to my driveway or workplace?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Mobile detailing is core—booking is mobile-first and service is positioned for on-site work across Bakersfield and the 661 region."
+              "text": "Yes. We are a mobile detailing service—we work at your home, workplace, or fleet lot in the Bakersfield / 661 area by appointment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What areas around Bakersfield do you serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We serve Oildale, Bakersfield, and the broader 661 region. Tell us your neighborhood in the booking form so we can confirm routing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a car detailing appointment take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Time depends on the package and vehicle size. We give you a realistic window when you book—plan for a multi-hour visit for full interior and exterior work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book or get a quote?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call (661) 555-0199, submit the contact form on this site, or DM Instagram. Include vehicle type and the package or add-ons you want."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I choose a mobile detailer I can trust?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Look for named packages, published pricing, recent photo proof in your climate, and consistent contact info across the web. We list services and prices here and show work on Instagram."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes exterior paint protection different in the Central Valley?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heat, dust, and sun load are constant here. Our Sunshine Shield tier focuses on automotive exterior protection and preservation—not just a quick wash."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer ceramic coating?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Ceramic coating packages are listed by 1–5 year terms on the pricing menu, alongside other add-ons."
             }
           }
         ]
